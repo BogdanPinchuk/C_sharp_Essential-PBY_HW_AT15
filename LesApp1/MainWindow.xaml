@@ -1,0 +1,17 @@
+﻿<Window x:Class="LesApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LesApp1"
+        mc:Ignorable="d"
+        Title="Registration" Height="177" Width="352.167">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="78,16,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="167,15,0,0" TextWrapping="Wrap" Text="login" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="78,57,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPassword" HorizontalAlignment="Left" Height="23" Margin="167,56,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="130,92,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock x:Name="tbExeption" HorizontalAlignment="Left" Margin="19,120,0,0" TextWrapping="Wrap" Text="Exeption" VerticalAlignment="Top" Width="308"/>
+    </Grid>
+</Window>
