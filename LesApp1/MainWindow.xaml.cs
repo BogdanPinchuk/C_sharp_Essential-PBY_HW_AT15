@@ -49,14 +49,10 @@ namespace LesApp1
                 }
                 tbExeption.Text = "Все ОК";
             }
-            catch (NotValidLoginExeption)
+            catch (NotValidLoginExeption ex)
             {
-                tbExeption.Text = "Недопустимые символы в логине";
+                tbExeption.Text = ex.Message;
                 return;
-            }
-            catch (FalseLoginExeption)
-            {
-
             }
 
             string dataStr = dataStrLogin + dataStrPassword;
@@ -74,9 +70,9 @@ namespace LesApp1
                 }
                 tbExeption.Text = "Все ОК";
             }
-            catch (NotValidPasswordExeption)
+            catch (NotValidPasswordExeption ex)
             {
-                tbExeption.Text = "Недопустимые символы в пароле";
+                tbExeption.Text = ex.Message;
                 return;
             }
 
@@ -86,19 +82,13 @@ namespace LesApp1
 
     class NotValidLoginExeption : Exception
     {
+        public string Message { get; set; }
+            = "Недопустимые символы в логине";
     }
 
     class NotValidPasswordExeption : Exception
     {
-
-    }
-
-    class FalseLoginExeption : Exception
-    {
-    }
-
-    class FalsePasswordExeption : Exception
-    {
-
+        public string Message { get; set; }
+            = "Недопустимые символы в пароле";
     }
 }
