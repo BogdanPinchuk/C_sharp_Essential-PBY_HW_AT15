@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LesApp1"
         mc:Ignorable="d"
-        Title="Registration" Height="177" Width="352.167">
+        Title="Registration" Height="222.514" Width="352.167">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="78,16,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="167,15,0,0" TextWrapping="Wrap" Text="login" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="78,57,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbPassword" HorizontalAlignment="Left" Height="23" Margin="167,56,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Apply" HorizontalAlignment="Left" Margin="130,92,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBlock x:Name="tbExeption" HorizontalAlignment="Left" Margin="19,120,0,0" TextWrapping="Wrap" Text="Exeption" VerticalAlignment="Top" Width="308"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,32,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,72,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="Accept" HorizontalAlignment="Left" Margin="129,125,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" FontSize="14"/>
+        <StatusBar x:Name="sbExeption" Height="30" VerticalAlignment="Bottom">
+            <TextBox x:Name="tbExeption" Text="Exeption" FontStyle="Italic" Visibility="Hidden"/>
+        </StatusBar>
+        <TextBox x:Name="tbLogin"       HorizontalAlignment="Left" Margin="170,24,0,134" TextWrapping="Wrap" Text="login"       Width="120" FontSize="14" TextAlignment="Center" VerticalContentAlignment="Stretch" MinHeight="23" MaxWidth="120" MinWidth="120" MaxHeight="23" BorderThickness="1" Padding="0" Background="White" KeyDown="tbLogin_KeyDown"/>
+        <TextBox x:Name="tbPassword"    HorizontalAlignment="Left" Margin="170,64,0,94" TextWrapping="Wrap" Text="password"    Width="120" FontSize="14" TextAlignment="Center" VerticalContentAlignment="Stretch" MinHeight="23" MaxWidth="120" MinWidth="120" MaxHeight="23" BorderThickness="1" Padding="0" KeyDown="tbPassword_KeyDown"/>
     </Grid>
 </Window>
